@@ -1,7 +1,7 @@
 import bcrypt
 from user_db import get_user_by_username, save_user
 
-# authenticate user
+# function for authenticate user
 def authenticate_user(username, password):
     """
     Authenticate user with password only
@@ -16,7 +16,7 @@ def authenticate_user(username, password):
     
     return None
 
-# user registration
+# function for user registration
 def register_user(username, password):
     """
     Register new user with password
