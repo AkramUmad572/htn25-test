@@ -1,3 +1,36 @@
+## PR #11: Revert "DOC-3: Add BFS and DFS functionality modes for graph traversal alongs…"
+*Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* revert-10-DOC-3-add-jira
+### Summary
+## Revert of Graph Traversal Functionality
+
+**1. Summary**
+
+This pull request reverts commit AkramUmad572/htn25-test#10, which added Breadth-First Search (BFS) and Depth-First Search (DFS) functionality for graph traversal.  The reason for the revert is not explicitly stated in the provided information.
+
+**2. Technical Changes**
+
+The pull request simply undoes the addition of BFS and DFS graph traversal modes.  No new code is introduced; only the previously added code is removed.
+
+**3. Risks/Edge Cases**
+
+The risks are associated with the original changes that are now reverted.  Without knowing the specifics of AkramUmad572/htn25-test#10, potential risks are unknown.  However, reverting the changes might reintroduce any bugs or issues that the original commit was intended to fix.
+
+**4. Docs/Follow-ups**
+
+No documentation updates are needed as the changes are a complete revert.  Further investigation into why the original changes were reverted is recommended.  If the functionality is desired, a new PR with improved implementation should be created.
+### Technical Changes
+- Revert "DOC-3: Add BFS and DFS functionality modes for graph traversal alongs…"
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #11 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/11
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/358c5f983bd5811d2d00f48ed28f3b647c9ea16e...0512257b2238caae6c2ad9febcd89fb3dc13597a
+---
 ## PR #10: DOC-3: Add BFS and DFS functionality modes for graph traversal alongs…
 *Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
 ### Summary
