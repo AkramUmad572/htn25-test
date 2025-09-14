@@ -50,5 +50,11 @@ shortest_distances = dijkstra(graph, start_node)
 print(f"Shortest distances from {start_node}: {shortest_distances}")
 
 start_node_2 = 'B'
-shortest_distances_2 = dijkstra(graph, start_node_2)
-print(f"Shortest distances from {start_node_2}: {shortest_distances_2}")
+print("Dijkstra from B:", dijkstra(graph, start_node_2))
+bfs_order_2, bfs_dist_2 = bfs(graph, start_node_2)
+print("BFS order from B:", bfs_order_2)
+print("BFS hop distances from B:", bfs_dist_2)
+dfs_order_2 = dfs(graph, start_node_2)
+print("DFS order from B:", dfs_order_2)
+
+print("usage: bfs dfs or dijstra")
