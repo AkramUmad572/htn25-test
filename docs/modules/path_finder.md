@@ -1,66 +1,83 @@
-# Graph Traversal Algorithms: `path_finder` Module
+# Graph Traversal Algorithms
 
-This module provides functions for traversing graphs using different algorithms.
+This module provides functions for traversing graphs using three common algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Dijkstra's algorithm.
 
 ## Dijkstra's Algorithm
 
-The `dijkstra(graph, start_node)` function implements Dijkstra's algorithm to find the shortest paths from a given `start_node` in a weighted graph with non-negative weights.
+Finds the shortest paths from a single source node to all other reachable nodes in a weighted graph.
 
-### Parameters
+```python
+def dijkstra(graph, start_node):
+    # ... implementation details ...
+    return shortest_distances
+```
 
-* `graph (dict)`: A dictionary representing the graph where keys are nodes and values are dictionaries of neighbors with their weights.  Example: `{'A': {'B': 1, 'C': 4}, 'B': {'A': 1, 'D': 2}}`
-* `start_node`: The starting node.
+**Parameters:**
 
-### Returns
+* `graph`: A dictionary representing the graph where keys are nodes and values are dictionaries of neighbors with associated edge weights.
+* `start_node`: The starting node for the search.
 
-* `dict`: A dictionary containing the shortest distances from the `start_node` to all other reachable nodes.
+**Returns:**
+
+A dictionary of shortest distances from the `start_node` to all other reachable nodes.
 
 ## Breadth-First Search (BFS)
 
-The `bfs(graph, start_node)` function performs a Breadth-First Search, finding the shortest paths in terms of number of hops (unweighted).
+Explores a graph level by level, finding the shortest path in an unweighted graph.
 
-### Parameters
+```python
+def bfs(graph, start_node):
+    # ... implementation details ...
+    return bfs_order, bfs_distances
+```
 
-* `graph (dict)`: Same as Dijkstra's.
+**Parameters:**
+
+* `graph`: A dictionary representing the graph.
 * `start_node`: The starting node.
 
-### Returns
+**Returns:**
 
-* `tuple`: A tuple containing:
-    * `order (list)`: List of nodes visited in BFS order.
-    * `distances (dict)`: Dictionary of hop-count distances from `start_node`.
+* `bfs_order`: A list of nodes visited in BFS order.
+* `bfs_distances`: A dictionary of hop distances from the `start_node` to each reachable node.
 
 ## Depth-First Search (DFS)
 
-The `dfs(graph, start_node)` function performs a Depth-First Search.
-
-### Parameters
-
-* `graph (dict)`: Same as Dijkstra's.
-* `start_node`: The starting node.
-
-### Returns
-
-* `list`: List of nodes visited in DFS order.
-
-## Examples
+Explores a graph by going as deep as possible along each branch before backtracking.
 
 ```python
-import path_finder
+def dfs(graph, start_node):
+    # ... implementation details ...
+    return dfs_order
+```
+
+**Parameters:**
+
+* `graph`: A dictionary representing the graph.
+* `start_node`: The starting node.
+
+**Returns:**
+
+A list of nodes visited in DFS order.
+
+## Usage Example
+
+```python
+from path_finder import dijkstra, bfs, dfs
+
 graph = {
-    'A': {'B': 1, 'C': 4},
-    'B': {'A': 1, 'D': 2},
-    'C': {'A': 4, 'E': 3},
-    'D': {'B': 2, 'F': 5},
-    'E': {'C': 3, 'F': 2},
-    'F': {'D': 5, 'E': 2}
+    'A': {'B': 4, 'C': 2},
+    'B': {'A': 4, 'D': 5},
+    'C': {'A': 2, 'E': 3},
+    'D': {'B': 5, 'F': 2},
+    'E': {'C': 3, 'F': 4},
+    'F': {'D': 2, 'E': 4}
 }
 
-start_node = 'A'
-print("Dijkstra from A:", path_finder.dijkstra(graph, start_node))
-bfs_order, bfs_dist = path_finder.bfs(graph, start_node)
+print("Dijkstra from A:", dijkstra(graph, 'A'))
+bfs_order, bfs_dist = bfs(graph, 'A')
 print("BFS order from A:", bfs_order)
 print("BFS hop distances from A:", bfs_dist)
-dfs_order = path_finder.dfs(graph, start_node)
+dfs_order = dfs(graph, 'A')
 print("DFS order from A:", dfs_order)
 ```
