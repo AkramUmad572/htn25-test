@@ -1,3 +1,36 @@
+## PR #8: DOC-3: add comment for hello world in python file
+*Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
+### Summary
+## DOC-3: Add Comment to Python Hello World File
+
+**1. Summary**
+
+This pull request adds a comment to the Python "hello world" example file.  No further description was provided.
+
+**2. Technical Changes**
+
+A comment was added to the Python hello world file.  The specific content of the comment is not detailed in the PR description.
+
+**3. Risks/Edge Cases**
+
+None identified.
+
+**4. Docs/Follow-ups**
+
+None identified.
+### Technical Changes
+- DOC-3: add comment for hello world in python file
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #8 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/8
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/2de12925cbefd6508873cac405f59976e0af2501...d2d478c3b21087f3b84b49a96b1b2b3d52549491
+---
 ## PR #7: DOC-3: add hello world in jira.py new file
 *Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
 ### Summary
