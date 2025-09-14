@@ -1,3 +1,15 @@
+## REVERT of PR #8: DOC-3: add comment for hello world in python file
+*Reverted:* 2025-09-14 • *Original Merge:* 2025-09-14T10:24:13Z • *Author:* AkramUmad572
+### Summary
+This entry documents a revert of the original change introduced by PR #8. No prior changelog entries were removed; the log remains append-only.
+### What Changed
+- Code reverted to the first parent of merge commit `fcb51ae81f6dcf78a46ec2a115a694b4f73ec4a0` via new commit `9d352cda650916ac561e1ae90ebf883b0f66aa6d`.
+- Documentation: earlier entries remain intact; this entry records the revert.
+### Links
+- Original PR: https://github.com/AkramUmad572/htn25-test/pull/8
+- Merge commit: `fcb51ae81f6dcf78a46ec2a115a694b4f73ec4a0`
+- Revert commit: `9d352cda650916ac561e1ae90ebf883b0f66aa6d`
+---
 ## PR #7: DOC-3: add hello world in jira.py new file
 *Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
 ### Summary
