@@ -1,3 +1,36 @@
+## PR #12: DOC-3: add 3 modes of dfs bfs and dijstras
+*Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
+### Summary
+## Pull Request Summary: Adding DFS, BFS, and Dijkstra's Algorithm Modes
+
+**1. Summary**
+
+This pull request adds three graph traversal algorithm modes: Depth-First Search (DFS), Breadth-First Search (BFS), and Dijkstra's algorithm.  No detailed description was provided.
+
+**2. Technical Changes**
+
+The pull request implements the DFS, BFS, and Dijkstra's algorithms.  Specific implementation details are unavailable due to the lack of a description.
+
+**3. Risks/Edge Cases**
+
+Potential risks and edge cases are unknown without further information on the implementation.  Thorough testing is required to identify and address these.
+
+**4. Docs/Follow-ups**
+
+Documentation needs to be updated to reflect the addition of these three algorithm modes.  Further investigation into the implementation details is necessary to fully assess the changes and potential issues.  A JIRA ticket should be created to track this work.
+### Technical Changes
+- DOC-3: add 3 modes of dfs bfs and dijstras
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #12 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/12
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/33fcc22ca185d12b23402cef44cad68a4acb1430...b2dcb53d956d0f88c28e6b4ab7910e63097dbf41
+---
 ## PR #10: DOC-3: Add BFS and DFS functionality modes for graph traversal alongs…
 *Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
 ### Summary
