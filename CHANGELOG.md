@@ -1,3 +1,34 @@
+## PR #9: DOC-3: adding logic change to path finding algorithm in path_finder.p…
+*Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
+### Summary
+1. **Summary**
+
+This pull request enhances the pathfinding algorithm within the `path_finder.py` module.  The changes improve the algorithm's logic and include comprehensive documentation, crucial given the module's use across multiple other modules.
+
+2. **Technical Changes**
+
+The pull request modifies the pathfinding algorithm in `path_finder.py`.  Specific details about the algorithm changes are not provided in the description.  The implementation emphasizes thorough documentation.
+
+3. **Risks/Edge Cases**
+
+No risks or edge cases are explicitly identified in the pull request description.  Further investigation may be needed to assess potential issues.
+
+4. **Docs/Follow-ups**
+
+The pull request focuses on improving documentation for the `path_finder.py` module.  No further documentation or follow-up tasks are specified.
+### Technical Changes
+- DOC-3: adding logic change to path finding algorithm in path_finder.py which is a module which will be used in multiple other modules so the implementation must be well documented
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #9 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/9
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/374d19af0d6a721e9733a9b1ec2ce62c2ab6ebe1...9e5978fca51b1266ad151cca6aa47589d824b915
+---
 ## REVERT of PR #8: DOC-3: add comment for hello world in python file
 *Reverted:* 2025-09-14 • *Original Merge:* 2025-09-14T10:24:13Z • *Author:* AkramUmad572
 ### Summary
