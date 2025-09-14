@@ -94,3 +94,5 @@ print("BFS order from B:", bfs_order_2)
 print("BFS hop distances from B:", bfs_dist_2)
 dfs_order_2 = dfs(graph, start_node_2)
 print("DFS order from B:", dfs_order_2)
+
+print("usage: bfs dfs or dijstra")
