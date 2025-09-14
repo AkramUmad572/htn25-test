@@ -1,3 +1,38 @@
+## PR #10: DOC-3: Add BFS and DFS functionality modes for graph traversal alongs…
+*Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
+### Summary
+## DOC-3: Add BFS and DFS Graph Traversal Modes
+
+**1. Summary**
+
+This pull request enhances graph traversal capabilities by adding Breadth-First Search (BFS) and Depth-First Search (DFS) functionality alongside the existing Dijkstra's algorithm.  This provides more versatile graph traversal options.
+
+**2. Technical Changes**
+
+Added BFS and DFS algorithms as new modes for graph traversal.  The implementation allows users to select the desired traversal method.
+
+**3. Risks/Edge Cases**
+
+* **Performance:**  The performance of BFS and DFS may vary depending on graph structure and size.  Testing should be conducted to ensure acceptable performance across various scenarios.
+* **Error Handling:** Robust error handling should be implemented to manage cases such as empty graphs or invalid input.
+
+**4. Docs/Follow-ups**
+
+* Update documentation to reflect the addition of BFS and DFS modes, including usage examples and performance considerations.
+* Add unit tests to cover the new functionality and edge cases.
+### Technical Changes
+- DOC-3: Add BFS and DFS functionality modes for graph traversal alongside dijstras
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #10 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/10
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/9e32f8c024fde2908751753da6e77ea34837e3e4...4ae68c9c42baadb457c88a462bd761c36b36d470
+---
 ## PR #11: Revert "DOC-3: Add BFS and DFS functionality modes for graph traversal alongs…"
 *Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* revert-10-DOC-3-add-jira
 ### Summary
