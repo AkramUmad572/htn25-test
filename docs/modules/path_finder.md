@@ -1,83 +1,46 @@
-# Graph Traversal Algorithms
+# Pathfinding Algorithms
 
-This module provides functions for traversing graphs using three common algorithms: Depth-First Search (DFS), Breadth-First Search (BFS), and Dijkstra's algorithm.
+## A* Search
 
-## Dijkstra's Algorithm
+The A* search algorithm is now available for finding optimal paths in a graph.
 
-Finds the shortest paths from a single source node to all other reachable nodes in a weighted graph.
+### `astar(graph, start_node, goal_node, heuristic)`
 
-```python
-def dijkstra(graph, start_node):
-    # ... implementation details ...
-    return shortest_distances
-```
+**Overview:** This function implements the A* search algorithm to find the shortest path between a start and goal node in a graph.
+
+**When to use:** Use A* when you need to find the shortest path in a graph, and you have a heuristic function that estimates the distance from any node to the goal.
 
 **Parameters:**
 
-* `graph`: A dictionary representing the graph where keys are nodes and values are dictionaries of neighbors with associated edge weights.
-* `start_node`: The starting node for the search.
-
-**Returns:**
-
-A dictionary of shortest distances from the `start_node` to all other reachable nodes.
-
-## Breadth-First Search (BFS)
-
-Explores a graph level by level, finding the shortest path in an unweighted graph.
-
-```python
-def bfs(graph, start_node):
-    # ... implementation details ...
-    return bfs_order, bfs_distances
-```
-
-**Parameters:**
-
-* `graph`: A dictionary representing the graph.
+* `graph (dict)`: An adjacency dictionary representing the graph.  Keys are nodes, and values are dictionaries where keys are neighbors and values are edge weights.
 * `start_node`: The starting node.
+* `goal_node`: The target node.
+* `heuristic (func)`: A function that estimates the cost from a node to the goal node.  The function should take two nodes as input and return a non-negative number.
 
 **Returns:**
 
-* `bfs_order`: A list of nodes visited in BFS order.
-* `bfs_distances`: A dictionary of hop distances from the `start_node` to each reachable node.
+* `(path, cost)`: A tuple containing the shortest path (list of nodes) and its total cost. Returns `(None, float('infinity'))` if no path is found.
 
-## Depth-First Search (DFS)
-
-Explores a graph by going as deep as possible along each branch before backtracking.
+**Example:**
 
 ```python
-def dfs(graph, start_node):
-    # ... implementation details ...
-    return dfs_order
-```
+import heapq
 
-**Parameters:**
+def dummy_heuristic(n1, n2):
+    return 0  # reduces A* to Dijkstra
 
-* `graph`: A dictionary representing the graph.
-* `start_node`: The starting node.
-
-**Returns:**
-
-A list of nodes visited in DFS order.
-
-## Usage Example
-
-```python
-from path_finder import dijkstra, bfs, dfs
+def astar(graph, start_node, goal_node, heuristic):
+    # ... (A* implementation from PR) ...
 
 graph = {
-    'A': {'B': 4, 'C': 2},
-    'B': {'A': 4, 'D': 5},
-    'C': {'A': 2, 'E': 3},
-    'D': {'B': 5, 'F': 2},
-    'E': {'C': 3, 'F': 4},
-    'F': {'D': 2, 'E': 4}
+    'A': {'B': 1, 'C': 4},
+    'B': {'A': 1, 'D': 2},
+    'C': {'A': 4, 'E': 3},
+    'D': {'B': 2, 'F': 5},
+    'E': {'C': 3, 'F': 2},
+    'F': {'D': 5, 'E': 2}
 }
 
-print("Dijkstra from A:", dijkstra(graph, 'A'))
-bfs_order, bfs_dist = bfs(graph, 'A')
-print("BFS order from A:", bfs_order)
-print("BFS hop distances from A:", bfs_dist)
-dfs_order = dfs(graph, 'A')
-print("DFS order from A:", dfs_order)
+path, cost = astar(graph, 'A', 'F', dummy_heuristic)
+print("A* path from A to F:", path, "with cost:", cost)
 ```
