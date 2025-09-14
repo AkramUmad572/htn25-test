@@ -1,3 +1,36 @@
+## PR #13: DOC-3: saying hello world in python
+*Merged:* 2025-09-14 • *Author:* tegveerbhatti • *Base:* main ← *Head:* DOC-3
+### Summary
+## DOC-3: Saying Hello World in Python
+
+**1. Summary**
+
+This pull request adds a "Hello, world!" example in Python to the documentation.  No further description was provided.
+
+**2. Technical Changes**
+
+A single commit added a "Hello, world!" Python example to the documentation.  The specific location within the documentation is not detailed in the PR.
+
+**3. Risks/Edge Cases**
+
+None identified.
+
+**4. Docs/Follow-ups**
+
+No specific documentation updates are needed beyond the inclusion of the "Hello, world!" example itself.  Further examples or expansion of the Python documentation may be considered in future work.
+### Technical Changes
+- DOC-3: saying hello world in python
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #13 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/13
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/4ca06ead943822124c8ce1ddcfc4b0d728b34fbe...b017fe3eebfe5e32365b5d7d6ea9be2b22c5a2f9
+---
 ## PR #12: DOC-3: add 3 modes of dfs bfs and dijstras
 *Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
 ### Summary
