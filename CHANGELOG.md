@@ -1,3 +1,36 @@
+## PR #14: Doc 3 add jira
+*Merged:* 2025-09-14 • *Author:* AkramUmad572 • *Base:* main ← *Head:* DOC-3-add-jira
+### Summary
+## Pull Request Summary: Add A* Algorithm Skeleton Code
+
+**1. Summary**
+
+This pull request adds a basic skeleton code implementation for the A* graph traversal algorithm to the pathfinding algorithms section of the documentation.  No associated JIRA ticket was provided.
+
+**2. Technical Changes**
+
+A dummy skeleton code implementation of the A* algorithm was added.  The implementation is incomplete and serves as a placeholder.
+
+**3. Risks/Edge Cases**
+
+The current implementation is a placeholder and lacks functionality.  It poses no immediate risks but should be considered incomplete and requires further development before use in a production environment.
+
+**4. Docs/Follow-ups**
+
+The documentation should be updated to clearly indicate that the A* algorithm implementation is incomplete and a work in progress.  Further development is required to complete the implementation and add necessary testing.  A JIRA ticket should be created to track the completion of the A* algorithm implementation.
+### Technical Changes
+- DOC-3: add A* skeleton code to path finding algorithms
+### Risks / Edge Cases
+- (fill in if applicable; e.g., migration, perf, feature flag rollout)
+### Rollback Plan
+- Use GitHub “Revert” on PR #14 (auto-creates a revert PR).
+- Undo any external side effects (migrations/config/docs).
+### Docs / Follow-ups
+- (list docs to update or follow-up tasks/tickets/owners)
+### Links
+- PR: https://github.com/AkramUmad572/htn25-test/pull/14
+- Diff: https://github.com/AkramUmad572/htn25-test/compare/e213e6f1334e690da7c8adca9e0d14fe97965177...910d0195485d27fb7aceb42f0b14fa1596482600
+---
 ## PR #13: DOC-3: saying hello world in python
 *Merged:* 2025-09-14 • *Author:* tegveerbhatti • *Base:* main ← *Head:* DOC-3
 ### Summary
